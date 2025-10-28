@@ -1,0 +1,51 @@
+#CM245_AriLee
+#PizzaOrderingSystem.
+
+##Assignment Introduce
+This is a program simyulationing the pizza ordering system. 
+I materilazed the funtions of printing the lists of order and total price, using inheritence and method overriding.
+
+##Assignment Description
+The objective of this assignment is to implement a Java program that simulates an ordering system for a pizza restaurant. 
+The program will use inheritance and polymorphism to manage different types of products (pizzas and drinks), 
+compute the total price of an order, and display the order details.
+###Funtions
+1. This system provides Cheese, Pepperoni, Morel Mushroom Pizzas as the types.
+2. The price of each pizzas is differd by their size.
+3. This system provieds Fountain Drink and Bubble Tea. 
+4. Each Drinks has its one flavor, and it checks ice or not.
+5. It prints out the list of what you order and prices, calculates the total price. 
+
+##CodeNote
+### 1. Product class
+       - menage all the common properties (name,price)
+       - getDescription() : provide the basic explanation.
+    2. Pizza classes
+       - Pizza: just add size info
+       - cheesePizza, PepperoniPizza, MorelMushroomPizza: set up the name and price for each pizza type. 
+       - getDescription() method override, so that I can provide the details (size + pizza name)
+    3. Drink classes
+       - add flavor and the boolean for ice exsist.
+       - Fountain class: price 2.50
+       - BubbleTea class: I made another class for bubble tea. because its price is different. 4.50
+    4. Main class
+       - get user's inputs as a single line (ex, Pizza:Cheese:Medium, Drink:Fountain:RootBeer:Ice)
+       - make each products's objects and add the order list.
+       - print out the Description and price of each products, and print the calculated the total price.
+       - complete and close. 
+
+## Complie and How to Run
+1. just run this program and put your order. 
+2. like this
+   Example Input:
+   Please Input Your Order: Pizza:Cheese:Medium, Drink:Fountain:RootBeer:Ice, Pizza:MorelMushroom:Large, Drink:BubbleTea:Cantaloupe:NoIce
+3. Output will be like this. 
+   Example Output:
+
+Order Summary:
+Medium Cheese Pizza - $10.99
+Root Beer Fountain Drink with Ice - $2.50
+Large Morel Mushroom Pizza - $16.99
+Cantaloupe Bubble Tea without Ice - $4.50
+Total Price: $34.98
+
