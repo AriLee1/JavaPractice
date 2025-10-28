@@ -1,0 +1,30 @@
+#CM245 
+#Stopwatch
+
+## Assignment Description:
+1. Create a Java program that simulates a stopwatch.
+2. funtions: start, reset, and check elapsed time (using command-line input)
+3. use System.currentTimeMillis().
+
+## CodeNote
+### Time Measurement
+1. Uses System.currentTimeMillis() to get the current time in milliseconds.
+2. When start() is called, the current time is stored in startTime.
+3. When stop() is called, the elapsed time is calculated in seconds and added to seconds.
+### State 
+1. The isRunning variable tracks whether the stopwatch is running.
+2. start() records the start time if not already running, otherwise prints an error message.
+3. stop() records elapsed time and sets isRunning to false.
+4. reset() only resets the stopwatch when it is stopped.
+### Methods
+1. start()
+2. stop()
+3. reset()
+4. getTime()
+5. main()
+
+## How to Run
+1. Type "start" to strat the stopwatch
+2. Type "stop" to stop the stopwatch
+3. Type "time" to check the time
+4. Type "exit" to exit it.
